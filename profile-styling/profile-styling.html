@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Profile Styling</title>
+
+	<style type="text/css">
+		/*
+			Primary color: #d81b60;
+			Primary darker color: #880e4f;
+
+			Sidebar width: 250px;
+
+			Padding across the site: 30px; ( smaller padding will be 15px or 10px)
+		*/
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* --- header --- */
+    header {
+      padding: 10px;
+      font-size: 20px;
+      background-color: #d81b60;
+      color: white;
+      height: 125px;
+    }
+    .logo{
+      margin: 17px;
+      float: left;
+      height: 64px;
+      width: 200px;
+    }
+    ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;      
+    }
+    .right{
+      float: right;
+    }
+    li a{
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 15px 15px;
+      text-decoration: none;
+    }
+    li a:hover{
+      background-color: #880e4f;
+    }
+    /* --- end header --- */
+
+    /* --- left div --- */
+    .article-left {
+      float:left;
+      width: 250px;
+      background: white;
+      padding: 10px;
+    }
+    .image-cover {
+      width: 210px;
+      height: 230px; 
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: left top;
+      background-color: #f3f3f3;
+      -webkit-box-shadow:0px 8px 1px #c8c8c8;
+      -moz-box-shadow:0px 8px 1px #c8c8c8;
+      box-shadow:0px 8px 1px #c8c8c8;
+    }
+    /* --- end left div --- */
+
+    /* --- right div --- */
+    .article-right {
+      float:left;
+      background: white;
+      position: absolute;
+      top: 80px;
+      left: 250px;
+      padding: 5px 5px 80px 40px;
+    }
+    p, h2, h3 {
+      padding-right: 1%;
+      padding-left: 0.5%;
+    }
+    .gallery {
+      width: 100%;
+    }
+    .image {
+      width: 32%;
+      margin: .5%;
+      height: auto;
+    }
+    /* --- end right div --- */
+
+    /* --- footer --- */
+    footer {
+      background-color: #030202;
+      padding: 15px;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 98%;
+      height: 40px;
+      font-size: 20px;
+    }
+    .left{
+      float: left;
+    }
+    /* --- end footer --- */
+
+
+	</style>
+
+</head>
+<body>
+  <header>
+    <img class="logo" src="images/adeptmind-logo-white.svg" alt="adeptmind">
+    <ul>
+      <li class="right"><a href="#">Contact</a></li>
+      <li class="right"><a href="#">About</a></li>
+      <li class="right"><a href="#">Home</a></li>
+    </ul>
+  </header>
+  <section>
+    <article class="article-left">
+      <img class="image-cover" src="images/profile-image.png" alt="profile image">
+    </article>
+    <article class="article-right">
+      <h2>
+        Developer at Adeptmind
+      </h2>
+      <p>
+        Adeptmind is an AI company innovating in e-commerce search using active learning and deep learning. Its co-founders recently came out of a quite successful sale of their previous company. This time around, they raised a little too much VC capyital and are looking to grow a kick-ass Silicon Valley style team right here in downtown Toronto.
+      </p>
+      <p>
+        Our current engineering efforts focus on vertical expansion, building more tools and services. Current projects ranges from creating internal service to providing command line utilities as well large scale crawling and data processing. If you are a hacker minded developer like us, you will find it at home.
+      </p>
+      <p>
+        Of course, life in a young startup can get hectic. But we spend just as much, if not more, effort to grow our engineers as well. We actively hold technical seminars, send our people to conferences and initiate manageable research project. We believe a company cannot grow until the people can.
+      </p>
+      <h3>Gallery</h3>
+      <div class="gallery">
+        <img class="image" src="images/image1.jpg" alt="Image 1">
+      
+        <img class="image" src="images/image2.jpg" alt="Image 2">
+      
+        <img class="image" src="images/image3.jpg" alt="Image 3">
+      
+        <img class="image" src="images/image4.jpg" alt="Image 4">
+      
+        <img class="image" src="images/image5.jpg" alt="Image 5">
+      
+        <img class="image" src="images/image6.jpg" alt="Image 6">        
+      </div>
+    </article>
+  </section>
+  <footer>
+    <ul>
+      <li><a href="#" class="left">&copy;2018</a></li>
+      <li><a href="#" class="right">Contact</a></li>
+      <li><a href="#" class="right">About</a></li>
+      <li><a href="#" class="right">Home</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
