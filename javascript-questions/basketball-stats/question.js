@@ -15,7 +15,7 @@
  */
 const totalScore = (pointsPerQuarter) => {
   // @TODO
-  pointsPerQuarter.reduce((a,b) => a + b, 0)
+  return pointsPerQuarter.reduce((a,b) => a + b, 0)
 };
 
 const raptorsScore = totalScore([26, 21, 25, 21]);
@@ -32,7 +32,7 @@ const getAveragePoints = (players) => {
   //convert it into an array
   var pointsArr = Object.keys(players).map((key) =>  players[key]['points']);
   //find an average
-  pointsArr.reduce((a,b) => a + b, 0) / pointsArr.length
+  return pointsArr.reduce((a,b) => a + b, 0) / pointsArr.length
 };
 
 const startingPlayers = {
@@ -71,7 +71,7 @@ const getHighestScorers = (players, average) => {
   Object.keys(obj)
     .filter( key => predicate(obj[key]['points']) )
     .reduce( (res, key) => (res[key] = obj[key], res), {} );
-  Object.filter(players, point => point > average);
+  return Object.filter(players, point => point > average);
 };
 
 const highestScoringPlayers = getHighestScorers(startingPlayers, averageScore);
@@ -87,7 +87,7 @@ console.log('Highest Scoring Players', highestScoringPlayers);
  */
 const addTimePlayedPerQuarter = (timePlayedArr) => {
   // @TODO
-  timePlayedArr.map((el) => { var o = Object.assign({}, el); o.perQuarter = el.time / 4; return o;})
+  return timePlayedArr.map((el) => { var o = Object.assign({}, el); o.perQuarter = el.time / 4; return o;})
 };
 
 const timePlayed = [
